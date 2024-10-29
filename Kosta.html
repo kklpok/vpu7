@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favikon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/vanga.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Перевірка поштового індексу</title>
+    
+</head>
+<nav class="nav">
+  <a class="nav-link" href="Kosta.html">Індекс</a>
+   <a class="nav-link" href="data.html">Дата народження</a>
+     <a class="nav-link" href="Uchni.html">Учні</a>
+     <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+     <a class="nav-link" href="teoria.html">Теорія</a>
+    </nav>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-white">Перевірка поштового індексу</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form id="postcodeForm">
+                        <!-- Поле для введення назви населеного пункту -->
+                        <label for="city">Назва населеного пункту:</label>
+                        <input type="text" id="city" name="city" required><br><br>
+                        <label for="region">Оберіть область:</label>
+                        <select id="region" name="region" required>
+                            <option value="" selected disabled>Оберіть область</option>
+                            <option value="Київська">Київська</option>
+                            <option value="Житомирська">Житомирська</option>
+                            <option value="Чернігівська">Чернігівська</option>
+                            <option value="Черкаська">Черкаська</option>
+                            <option value="Вінницька">Вінницька</option>
+                            <option value="Кіровоградська">Кіровоградська</option>
+                            <option value="Хмельницька">Хмельницька</option>
+                            <option value="Рівненська">Рівненська</option>
+                            <option value="Полтавська">Полтавська</option>
+                            <option value="Сумська">Сумська</option>
+                            <option value="Волинська">Волинська</option>
+                            <option value="Тернопільська">Тернопільська</option>
+                            <option value="Дніпропетровська">Дніпропетровська</option>
+                            <option value="Миколаївська">Миколаївська</option>
+                            <option value="Чернівецька">Чернівецька</option>
+                            <option value="Харківська">Харківська</option>
+                            <option value="Одеська">Одеська</option>
+                            <option value="Запорізька">Запорізька</option>
+                            <option value="Херсонська">Херсонська</option>
+                            <option value="Івано-Франківська">Івано-Франківська</option>
+                            <option value="Львівська">Львівська</option>
+                            <option value="Донецька">Донецька</option>
+                            <option value="Закарпатська">Закарпатська</option>
+                            <option value="Луганська">Луганська</option>
+                            <option value="АР Крим">АР Крим</option>
+                        </select><br><br>
+                        <!-- Поле для введення поштового індексу -->
+                        <label for="postcode">Введіть поштовий індекс:</label>
+                        <input type="text" id="postcode" name="postcode" maxlength="5" required pattern="\d{5}" placeholder="#####"><br><br>
+                        <button type="button" onclick="checkPostcode()">Перевірити індекс</button>
+                    </form>
+                    <!-- Місце для виведення результату -->
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center"></div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+        </svg>
+    </footer>
+    <script src="js/script2.js"></script>
+</body>
+</html>
