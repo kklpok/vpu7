@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест програмне забезпечення персонального комп'ютера</title>
+    <style>
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Програмне забезпечення персонального комп'ютера</h1>
+    <form id="quizForm">
+        <fieldset>
+            <legend>1. Що таке слот PCIe на материнській платі?</legend>
+            <label>
+                <input type="radio" name="respond1" value="1">
+                Інтерфейс для підключення оперативної пам'яті
+            </label><br>
+            <label>
+                <input type="radio" name="respond1" value="2">
+                Інтерфейс для підключення графічних карт та інших розширювальних карт
+            </label><br>
+            <label>
+                <input type="radio" name="respond1" value="3">
+                Тип процесора
+            </label>
+            
+            <legend>2. Що таке кластери на жорсткому диску?</legend>
+            <label>
+                <input type="radio" name="respond2" value="4">
+                Частини оперативної пам'яті, що використовуються для кешування
+            </label><br>
+            <label>
+                <input type="radio" name="respond2" value="5">
+                Блоки даних на жорсткому диску, які об'єднуються для зберігання файлів
+            </label><br>
+            <label>
+                <input type="radio" name="respond2" value="6">
+                Чіпи на материнській платі, що відповідають за управління живленням
+            </label>
+            
+            <legend>3. Що таке контрольна сума (checksum) у контексті перевірки даних на дисках?</legend>
+            <label>
+                <input type="radio" name="respond3" value="7">
+                Спосіб підвищення швидкості доступу до даних
+            </label><br>
+            <label>
+                <input type="radio" name="respond3" value="8">
+                Метод перевірки цілісності даних шляхом порівняння з обчисленим значенням
+            </label><br>
+            <label>
+                <input type="radio" name="respond3" value="9">
+                Тип файлової системи для жорсткого диска
+            </label>
+            
+            <legend>4. Яка з наведених характеристик є важливою для вибору ігрової відеокарти?</legend>
+            <label>
+                <input type="radio" name="respond4" value="10">
+                Обсяг оперативної пам'яті
+            </label><br>
+            <label>
+                <input type="radio" name="respond4" value="11">
+                Розмір екрану монітора
+            </label><br>
+            <label>
+                <input type="radio" name="respond4" value="12">
+                Частота процесора
+            </label>
+            
+            <legend>5. Що таке системний блок комп'ютера?</legend>
+            <label>
+                <input type="radio" name="respond5" value="13">
+                Місце для зберігання даних
+            </label><br>
+            <label>
+                <input type="radio" name="respond5" value="14">
+                Корпус, що містить основні компоненти комп'ютера, такі як материнська плата, процесор та інші
+            </label><br>
+            <label>
+                <input type="radio" name="respond5" value="15">
+                Периферійний пристрій для введення даних
+            </label>
+            
+            <legend>6. Що таке форм-фактор материнської плати?</legend>
+            <label>
+                <input type="radio" name="respond6" value="16">
+                Тип процесора, що підтримується материнською платою
+            </label><br>
+            <label>
+                <input type="radio" name="respond6" value="17">
+                Розмір і форма материнської плати
+            </label><br>
+            <label>
+                <input type="radio" name="respond6" value="18">
+                Тип оперативної пам'яті, що підтримується материнською платою
+            </label>
+            
+            <legend>7. Яка з наведених характеристик важлива при виборі блоків живлення для комп'ютера?</legend>
+            <label>
+                <input type="radio" name="respond7" value="19">
+                Кількість оперативної пам'яті
+            </label><br>
+            <label>
+                <input type="radio" name="respond7" value="20">
+                Потужність блоку живлення
+            </label><br>
+            <label>
+                <input type="radio" name="respond7" value="21">
+                Обсяг жорсткого диска
+            </label>
+            
+            <legend>8. Що з наступного визначає швидкість процесора?</legend>
+            <label>
+                <input type="radio" name="respond8" value="22">
+                Розмір кеш-пам'яті
+            </label><br>
+            <label>
+                <input type="radio" name="respond8" value="23">
+                Колір корпусу
+            </label><br>
+            <label>
+                <input type="radio" name="respond8" value="24">
+                Обсяг оперативної пам'яті
+            </label>
+            
+            <legend>9. Який компонент комп'ютера є найбільш чутливим до змін в напрузі електричної мережі?</legend>
+            <label>
+                <input type="radio" name="respond9" value="25">
+                Жорсткий диск (HDD)
+            </label><br>
+            <label>
+                <input type="radio" name="respond9" value="26">
+                Процесор
+            </label><br>
+            <label>
+                <input type="radio" name="respond9" value="27">
+                Оперативна пам'ять (RAM)
+            </label>
+            
+            <legend>10. Якщо комп'ютер починає часто перезавантажуватися без явних причин, це може бути викликано:</legend>
+            <label>
+                <input type="radio" name="respond10" value="28">
+                Нестачею місця на жорсткому диску
+            </label><br>
+            <label>
+                <input type="radio" name="respond10" value="29">
+                Проблемами з живленням або перегріванням
+            </label><br>
+            <label>
+                <input type="radio" name="respond10" value="30">
+                Неправильним встановленням драйверів
+            </label>
+            
+            <legend>11. Що з наведеного є частиною системи охолодження комп'ютера?</legend>
+            <label>
+                <input type="radio" name="respond11" value="31">
+                Процесор
+            </label><br>
+            <label>
+                <input type="radio" name="respond11" value="32">
+                Охолоджувач
+            </label><br>
+            <label>
+                <input type="radio" name="respond11" value="33">
+                Жорсткий диск (HDD)
+            </label>
+            
+            <legend>12. Що з наступного найбільше вплине на швидкість завантаження операційної системи?</legend>
+            <label>
+                <input type="radio" name="respond12" value="34">
+                Оперативна пам'ять (RAM)
+            </label><br>
+            <label>
+                <input type="radio" name="respond12" value="35">
+                Жорсткий диск (HDD)
+            </label><br>
+            <label>
+                <input type="radio" name="respond12" value="36">
+                Відеокарта
+            </label>
+            
+            <legend>13. Який тип інтерфейсу для підключення жорсткого диска є найбільш швидким?</legend>
+            <label>
+                <input type="radio" name="respond13" value="37">
+                SATA
+            </label><br>
+            <label>
+                <input type="radio" name="respond13" value="38">
+                IDE
+            </label><br>
+            <label>
+                <input type="radio" name="respond13" value="39">
+                NVMe
+            </label>
+            
+            <legend>14. Який компонент найчастіше замінюють для підвищення продуктивності в ігрових комп'ютерах?</legend>
+            <label>
+                <input type="radio" name="respond14" value="40">
+                Процесор
+            </label><br>
+            <label>
+                <input type="radio" name="respond14" value="41">
+                Оперативна пам'ять (RAM)
+            </label><br>
+            <label>
+                <input type="radio" name="respond14" value="42">
+                Відеокарта
+            </label>
+            <legend>15. Яка з наведених операцій може допомогти усунути проблеми з перегріванням комп'ютера?</legend>
+            <label>
+                <input type="radio" name="respond15" value="43">
+                Встановлення додаткових вентиляторів
+            </label><br>
+            <label>
+                <input type="radio" name="respond15" value="44">
+                Збільшення розміру оперативної пам'яті
+            </label><br>
+            <label>
+                <input type="radio" name="respond15" value="45">
+                Заміна жорсткого диска (HDD)
+            </label>
+        </fieldset>
+        <button type="button" onclick="checkAnswers()">Перевірити відповіді</button>
+        <div id="result" class="result"></div>
+    </form>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                respond1: "2",
+                respond2: "5",
+                respond3: "8",
+                respond4: "10",
+                respond5: "14",
+                respond6: "17",
+                respond7: "20",
+                respond8: "22",
+                respond9: "26",
+                respond10: "29",
+                respond11: "32",
+                respond12: "35",
+                respond13: "39",
+                respond14: "42",
+                respond15: "43"
+            };
+            
+            let correctAnswers = 0;
+            const form = document.getElementById('quizForm');
+            for (let key in answers) {
+                const selectedOption = form.querySelector(`input[name="${key}"]:checked`);
+                if (selectedOption && selectedOption.value === answers[key]) {
+                    correctAnswers++;
+                }
+            }
+
+            document.getElementById('result').innerText = `Кількість правильних відповідей: ${correctAnswers} з 15`;
+        }
+    </script>
+</body>
+</html>
